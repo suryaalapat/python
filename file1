@@ -1,0 +1,19 @@
+import mysql.connector
+
+mydb = mysql.connector.connect(
+i  host="localhost",
+  user="yourusername",
+  password="yourpassword"
+)
+
+print(mydb)
+
+
+import mysql.connector
+import mysql.connector
+import mysql.connector
+import mysql.connector
+import mysql.connector
+import mysql.connector
+  host="localhost",
+  host="localhost",
