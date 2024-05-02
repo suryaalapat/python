@@ -1,0 +1,14 @@
+models = []
+scores = []
+
+for n_estimators in estimator_range:
+
+    # Create bagging classifier
+    clf = BaggingClassifier(n_estimators = n_estimators, random_state = 22)
+
+    # Fit the model
+    clf.fit(X_train, y_train)
+
+    # Append the model and score to their respective list
+    models.append(clf)
+    scores.append(accuracy_score(y_true = y_test, y_pred = clf.predict(X_test)))
